@@ -27,11 +27,14 @@ const Contact = () => {
       return;
     }
 
-    // Here you would typically send the form data to a backend service
-    // For now, we'll just show a success message
+    // Open email client with pre-filled information
+    const subject = encodeURIComponent(`Portfolio Contact from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+    window.location.href = `mailto:muthurammuruganandan@gmail.com?subject=${subject}&body=${body}`;
+
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
+      title: "Opening Email Client",
+      description: "Your default email app will open with the message pre-filled.",
     });
 
     // Reset form

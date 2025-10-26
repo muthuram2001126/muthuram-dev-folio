@@ -78,8 +78,93 @@ const Hero = () => {
               variant="outline"
               className="border-2 border-primary hover:bg-primary/10 min-w-[200px]"
               onClick={() => {
-                // Resume download logic
-                window.open("#", "_blank");
+                const resumeContent = `MUTHURAM MURUGANANDAN
+Software Developer | Java | Spring Boot | React.js | Cloud & AI Enthusiast
+
+Contact Information:
+Email: muthurammuruganandan@gmail.com
+Phone: +91 7708278412
+Location: Bangalore, India
+LinkedIn: linkedin.com/in/muthuram-muruganandan-528444213
+GitHub: github.com/muthuram2001126
+
+PROFESSIONAL SUMMARY
+Results-driven Software Developer with 1+ years of experience in building scalable enterprise applications using Java, Spring Boot, and modern web technologies. Proven expertise in developing REST APIs, cloud solutions, and AI-powered applications. Microsoft Certified Azure Developer with strong problem-solving skills and passion for innovative technology solutions.
+
+EXPERIENCE
+
+Technology Analyst | KPMG
+August 2024 - Present | Bangalore, India
+• Architected and developed enterprise-grade Consent Management Platform using Java and Spring Boot, ensuring GDPR compliance
+• Built robust REST APIs with MySQL integration for centralized user consent tracking across multiple systems
+• Engineered Billboard Application for Goldman Sachs featuring complex fee computation and automated billing workflows
+• Integrated Revport billing system and implemented PDF generation for comprehensive financial reports
+• Optimized backend performance resulting in 40% faster API response times
+
+Software Developer Intern | Avasoft
+November 2023 - July 2024 | Remote
+• Contributed to AVALON project management platform development with Jira-like functionality
+• Enhanced bug-tracking modules and implemented new design workflows using AI (Asami)
+• Achieved 60% development efficiency improvement through automated code generation
+• Collaborated with cross-functional teams to deliver features on tight deadlines
+
+TECHNICAL SKILLS
+
+Programming Languages: Java, C/C++, SQL, JavaScript, Python
+Web Technologies: React.js, Node.js, Golang, HTML5, CSS3, Bootstrap, Tailwind CSS
+Frameworks & Libraries: Spring Boot, Express.js, REST API, GraphQL
+Databases: MySQL, MongoDB, PostgreSQL
+Cloud & DevOps: Microsoft Azure (AZ-204 Certified), Docker, Git
+Tools: IntelliJ IDEA, VS Code, Postman, Android Studio, GitHub, GitLab, Bitbucket
+AI/ML: Google Gemini API, OpenAI, Azure AI Services
+
+PROJECTS
+
+AI Resume Generator
+• Developed intelligent resume generation system using Google Gemini API
+• Analyzes user resumes and job descriptions to create optimized, tailored applications
+• Implements advanced NLP techniques for effective qualification-requirement matching
+
+Real-Time Location Tracker
+• Built group travel companion app with real-time GPS tracking capabilities
+• Features shareable group links and live location monitoring for multiple users
+• Integrated Google Maps API and WebSocket for seamless real-time updates
+
+COVID Vaccination Scheduler
+• Created comprehensive dual-interface vaccination management system
+• User portal for booking appointments with availability-based scheduling
+• Admin dashboard for CRUD operations, location management, and vaccine inventory tracking
+
+Soil Nutrient Analysis System
+• Designed IoT-based agricultural monitoring solution using Arduino sensors
+• Integrated ThingSpeak for data visualization and insights
+• Developed Android companion app for remote monitoring
+
+CERTIFICATIONS
+• Microsoft Certified: Azure Developer Associate (AZ-204) - 2024
+• Azure AI Fundamentals (AI-900) - 2024
+• Azure Fundamentals (AZ-900) - 2024
+• Generative AI - Microsoft & LinkedIn - 2024
+• Prompt Engineering for ChatGPT - Vanderbilt University - 2024
+
+EDUCATION
+Bachelor of Engineering in Computer Science
+Anna University | 2020 - 2024 | Chennai, India
+
+ACHIEVEMENTS
+• Completed 100-day coding challenge demonstrating consistent problem-solving skills
+• Active contributor to open-source projects on GitHub
+• Passionate about exploring emerging technologies and continuous learning`;
+
+                const blob = new Blob([resumeContent], { type: 'text/plain' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'Muthuram_M_Resume.txt';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
               }}
             >
               <Download className="mr-2" size={20} />

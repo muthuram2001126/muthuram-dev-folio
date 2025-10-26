@@ -38,6 +38,34 @@ const Certifications = () => {
       date: "2024",
       color: "from-orange-500 to-orange-600",
     },
+    {
+      title: "Java Programming",
+      issuer: "Oracle/Coursera",
+      code: "Certificate",
+      date: "2023",
+      color: "from-red-500 to-red-600",
+    },
+    {
+      title: "React.js Development",
+      issuer: "Meta/Coursera",
+      code: "Certificate",
+      date: "2023",
+      color: "from-cyan-500 to-blue-600",
+    },
+    {
+      title: "Data Structures & Algorithms",
+      issuer: "Stanford/Coursera",
+      code: "Certificate",
+      date: "2023",
+      color: "from-yellow-500 to-orange-600",
+    },
+    {
+      title: "Cloud Computing Basics",
+      issuer: "IBM",
+      code: "Certificate",
+      date: "2023",
+      color: "from-indigo-500 to-purple-600",
+    },
   ];
 
   return (

@@ -1,32 +1,42 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Projects = () => {
   const projects = [
     {
       title: "Consent Management Platform",
-      description: "Enterprise-grade platform for managing user consent and data privacy compliance. Built with Spring Boot and MySQL, featuring robust API integration and real-time consent tracking.",
+      description: "Developed an enterprise-grade platform for KPMG to manage user consent and ensure data privacy compliance. Built robust REST APIs using Java and Spring Boot with MySQL database for centralized consent tracking and seamless integration across systems.",
       tech: ["Java", "Spring Boot", "MySQL", "REST API"],
       category: "Enterprise",
-      link: null, // Internal KPMG asset
-      github: null,
     },
     {
       title: "Billboard Application",
-      description: "Complex financial application for Goldman Sachs featuring automated fee computation, billing integration with Revport, and PDF generation for financial reports.",
+      description: "Engineered a sophisticated financial application for Goldman Sachs handling complex fee computations and automated billing workflows. Integrated with Revport for seamless billing operations and implemented PDF generation for detailed financial reports.",
       tech: ["Java", "Spring Boot", "Revport", "PDF Gen"],
       category: "Finance",
-      link: null,
-      github: null,
+    },
+    {
+      title: "AI Resume Generator",
+      description: "Built an intelligent resume generation system leveraging Google Gemini API that analyzes user resumes and job descriptions to create optimized, tailored resumes. Implements advanced NLP techniques to match qualifications with job requirements effectively.",
+      tech: ["React.js", "Gemini API", "Node.js", "AI/ML"],
+      category: "AI",
+    },
+    {
+      title: "Real-Time Location Tracker",
+      description: "Created a group travel companion app enabling real-time location tracking for friends on separate routes. Features shareable group links for easy member addition and live GPS tracking to monitor each person's location along their journey to the destination.",
+      tech: ["React.js", "Google Maps API", "WebSocket", "Node.js"],
+      category: "Real-Time",
+    },
+    {
+      title: "COVID Vaccination Scheduler",
+      description: "Developed a comprehensive vaccination management system with dual interfaces: user portal for booking appointments based on vaccine availability and location preferences, and admin dashboard for complete CRUD operations, location management, and vaccine inventory tracking with unique ID generation.",
+      tech: ["React.js", "Node.js", "MongoDB", "Express"],
+      category: "Healthcare",
     },
     {
       title: "Soil Nutrient Analysis System",
-      description: "IoT-based system for real-time soil monitoring using Arduino sensors. Features ThingSpeak integration for data visualization and Android app for mobile access.",
+      description: "Designed an IoT-based agricultural monitoring solution using Arduino sensors for real-time soil analysis. Integrated ThingSpeak for data visualization and developed an Android companion app for remote monitoring and insights.",
       tech: ["IoT", "Arduino", "ThingSpeak", "Android"],
       category: "IoT",
-      link: null,
-      github: "https://github.com/muthuram2001126",
     },
   ];
 
@@ -82,39 +92,10 @@ const Projects = () => {
                 ))}
               </div>
 
-              <div className="flex gap-3">
-                {project.github && (
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1"
-                    onClick={() => window.open(project.github, "_blank")}
-                  >
-                    <Github size={16} className="mr-2" />
-                    Code
-                  </Button>
-                )}
-                {project.link && (
-                  <Button
-                    variant="default"
-                    size="sm"
-                    className="flex-1 bg-gradient-to-r from-primary to-accent"
-                    onClick={() => window.open(project.link, "_blank")}
-                  >
-                    <ExternalLink size={16} className="mr-2" />
-                    Live Demo
-                  </Button>
-                )}
-                {!project.link && !project.github && (
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1"
-                    disabled
-                  >
-                    Internal Project
-                  </Button>
-                )}
+              <div className="mt-auto pt-4 border-t border-border/50">
+                <p className="text-xs text-muted-foreground italic">
+                  Proprietary Project - Details under NDA
+                </p>
               </div>
             </motion.div>
           ))}
