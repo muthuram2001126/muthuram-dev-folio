@@ -199,7 +199,7 @@ ACHIEVEMENTS
               </svg>
             </a>
             <a
-              href="mailto:muthurammuruganandan@gmail.com"
+              href="https://muthuram2001126.github.io/muthuram-dev-folio/#contact"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail size={24} />
