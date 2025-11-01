@@ -77,9 +77,17 @@ const Projects = () => {
                 {project.title}
               </h3>
 
-              <p className="text-muted-foreground mb-4 line-clamp-3">
-                {project.description}
+              <p
+              className="text-muted-foreground mb-4"
+              style={{
+                overflow: "hidden",
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+              }}
+              >
+              {project.description}
               </p>
+
 
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tech.map((tech, idx) => (
