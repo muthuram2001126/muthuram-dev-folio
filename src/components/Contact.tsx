@@ -122,6 +122,7 @@ const Contact = () => {
                 </p>
               </div>
 
+
               {contactInfo.map((info, index) => (
                   <motion.div
                       key={index}
