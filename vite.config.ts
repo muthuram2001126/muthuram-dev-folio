@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  // base:"/muthuram-dev-folio",
+  base:process.env.NODE_ENV === 'production' ? '/muthuram-dev-folio/' : '/', // ✅ dynamic base
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
