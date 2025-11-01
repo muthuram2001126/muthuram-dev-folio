@@ -159,7 +159,7 @@ ACHIEVEMENTS
                 const blob = new Blob([resumeContent], { type: 'text/plain' });
                 const url = URL.createObjectURL(blob);
                 const link = document.createElement('a');
-                link.href = "`${process.env.PUBLIC_URL}/2003_Muthuram_Resume.pdf";
+                link.href = "https://muthuram2001126.github.io/muthuram-dev-folio/2003_Muthuram_Resume.pdf";
                 link.download = '2003_Muthuram_Resume.pdf';
                 document.body.appendChild(link);
                 link.click();
