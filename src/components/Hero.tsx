@@ -28,6 +28,16 @@ const Hero = () => {
             </span>
           </motion.div>
 
+          <div className="flex justify-center mb-6">
+            <motion.img
+                src={`${import.meta.env.BASE_URL}muthu_img.png`}
+                alt="Muthuram M"
+                className="w-40 h-40 rounded-full object-cover shadow-lg border-4 border-white"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+            />
+          </div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -209,20 +219,20 @@ ACHIEVEMENTS
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-      >
-        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-1.5 bg-primary rounded-full mt-2"
-          />
-        </div>
-      </motion.div>
+      {/*<motion.div*/}
+      {/*  initial={{ opacity: 0 }}*/}
+      {/*  animate={{ opacity: 1 }}*/}
+      {/*  transition={{ delay: 1, duration: 0.6 }}*/}
+      {/*  className="absolute bottom-8 left-1/2 transform -translate-x-1/2"*/}
+      {/*>*/}
+      {/*  <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">*/}
+      {/*    <motion.div*/}
+      {/*      animate={{ y: [0, 12, 0] }}*/}
+      {/*      transition={{ duration: 1.5, repeat: Infinity }}*/}
+      {/*      className="w-1.5 h-1.5 bg-primary rounded-full mt-2"*/}
+      {/*    />*/}
+      {/*  </div>*/}
+      {/*</motion.div>*/}
     </section>
   );
 };
