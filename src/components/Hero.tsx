@@ -159,8 +159,8 @@ ACHIEVEMENTS
                 const blob = new Blob([resumeContent], { type: 'text/plain' });
                 const url = URL.createObjectURL(blob);
                 const link = document.createElement('a');
-                link.href = url;
-                link.download = 'Muthuram_M_Resume.txt';
+                link.href = "/2003_Muthuram_Resume.pdf";
+                link.download = '2003_Muthuram_Resume.pdf';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
