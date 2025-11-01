@@ -46,7 +46,7 @@ const About = () => {
           >
             <p className="text-lg text-foreground/90 leading-relaxed mb-6">
               I'm a <span className="text-primary font-semibold">Software Developer</span> with a BE in Computer Science Engineering 
-              and over <span className="text-primary font-semibold">1+ year of professional experience</span> in building scalable software solutions. 
+              and over <span className="text-primary font-semibold">1.5+ year of professional experience</span> in building scalable software solutions.
               Currently working as a Technology Analyst at <span className="text-primary font-semibold">KPMG</span>, I specialize in developing 
               robust backend systems using Java and Spring Boot, along with modern frontend applications using React.js.
             </p>
