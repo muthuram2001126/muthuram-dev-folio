@@ -27,7 +27,6 @@ const Skills = () => {
     },
   ];
 
-
   return (
     <section id="skills" className="py-20 relative">
       <div className="container mx-auto px-4">
