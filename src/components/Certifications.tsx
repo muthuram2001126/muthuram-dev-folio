@@ -15,57 +15,82 @@ const Certifications = () => {
       issuer: "Microsoft",
       code: "AI-900",
       date: "2024",
-      color: "from-purple-500 to-purple-600",
+      // color: "from-purple-500 to-purple-600",
+      color: "from-blue-500 to-blue-600",
     },
     {
       title: "Azure Fundamentals",
       issuer: "Microsoft",
       code: "AZ-900",
       date: "2024",
-      color: "from-cyan-500 to-cyan-600",
+      // color: "from-cyan-500 to-cyan-600",
+      color: "from-blue-500 to-blue-600",
     },
     {
       title: "Generative AI",
       issuer: "Microsoft & LinkedIn",
       code: "Certificate",
       date: "2024",
-      color: "from-green-500 to-green-600",
+      // color: "from-green-500 to-green-600",
+      color: "from-blue-500 to-blue-600",
     },
     {
       title: "Prompt Engineering for ChatGPT",
       issuer: "Vanderbilt University",
       code: "Certificate",
       date: "2024",
-      color: "from-orange-500 to-orange-600",
+      // color: "from-orange-500 to-orange-600",
+      color: "from-blue-500 to-blue-600",
     },
     {
       title: "Java Programming",
       issuer: "Oracle/Coursera",
       code: "Certificate",
       date: "2023",
-      color: "from-red-500 to-red-600",
+      // color: "from-red-500 to-red-600",
+      color: "from-blue-500 to-blue-600",
     },
     {
       title: "React.js Development",
       issuer: "Meta/Coursera",
       code: "Certificate",
       date: "2023",
-      color: "from-cyan-500 to-blue-600",
+      // color: "from-cyan-500 to-blue-600",
+      color: "from-blue-500 to-blue-600",
     },
     {
       title: "Data Structures & Algorithms",
       issuer: "Stanford/Coursera",
       code: "Certificate",
       date: "2023",
-      color: "from-yellow-500 to-orange-600",
+      // color: "from-yellow-500 to-orange-600",
+      color: "from-blue-500 to-blue-600",
     },
     {
       title: "Cloud Computing Basics",
       issuer: "IBM",
       code: "Certificate",
       date: "2023",
-      color: "from-indigo-500 to-purple-600",
+      // color: "from-indigo-500 to-purple-600",
+      color: "from-blue-500 to-blue-600",
     },
+    {
+      title: (
+          <a
+              href="https://www.linkedin.com/in/muthuram-muruganandan-528444213/details/certifications/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 underline hover:text-blue-600 transition"
+          >
+            To view all my certifications, visit my LinkedIn profile.
+          </a>
+      ),
+      issuer: "",
+      code: "Certificate",
+      date: "",
+      // color: "from-teal-500 to-cyan-600",
+      color: "from-blue-500 to-blue-600",
+    }
   ];
 
   return (

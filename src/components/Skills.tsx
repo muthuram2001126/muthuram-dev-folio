@@ -10,17 +10,20 @@ const Skills = () => {
     {
       title: "Web Technologies",
       skills: ["React.js", "Node.js", "Golang", "HTML", "CSS", "Bootstrap"],
-      color: "from-purple-500 to-pink-500",
+      // color: "from-purple-500 to-pink-500",
+      color: "from-blue-500 to-cyan-500",
     },
     {
       title: "Tools & Platforms",
       skills: ["Git", "GitHub", "GitLab", "Bitbucket", "IntelliJ", "Android Studio"],
-      color: "from-orange-500 to-red-500",
+      // color: "from-orange-500 to-red-500",
+      color: "from-blue-500 to-cyan-500",
     },
     {
       title: "Cloud & AI",
       skills: ["Azure (AZ-204)", "AI-900", "AZ-900", "Spring Boot", "REST APIs"],
-      color: "from-green-500 to-emerald-500",
+      // color: "from-green-500 to-emerald-500",
+      color: "from-blue-500 to-cyan-500",
     },
   ];
 

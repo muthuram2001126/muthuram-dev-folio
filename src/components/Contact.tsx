@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -165,13 +166,14 @@ const Contact = () => {
                       className="w-10 h-10 rounded-lg glass-card flex items-center justify-center hover:bg-primary hover:text-white transition-all hover-lift"
                   >
                     {/* GitHub Icon */}
-                    <svg
-                        className="w-5 h-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                      <path d="M12 0c-6.626 0-12 5.373-12 12..." />
-                    </svg>
+                    {/*<svg*/}
+                    {/*    className="w-5 h-5"*/}
+                    {/*    fill="currentColor"*/}
+                    {/*    viewBox="0 0 24 24"*/}
+                    {/*>*/}
+                    {/*  <path d="M12 0c-6.626 0-12 5.373-12 12..." />*/}
+                    {/*</svg>*/}
+                    <FaGithub className="w-5 h-5" />
                   </a>
                   <a
                       href="https://linkedin.com/in/muthuram-muruganandan-528444213"
@@ -180,13 +182,14 @@ const Contact = () => {
                       className="w-10 h-10 rounded-lg glass-card flex items-center justify-center hover:bg-primary hover:text-white transition-all hover-lift"
                   >
                     {/* LinkedIn Icon */}
-                    <svg
-                        className="w-5 h-5"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5..." />
-                    </svg>
+                    {/*<svg*/}
+                    {/*    className="w-5 h-5"*/}
+                    {/*    fill="currentColor"*/}
+                    {/*    viewBox="0 0 24 24"*/}
+                    {/*>*/}
+                    {/*  <path d="M19 0h-14c-2.761 0-5 2.239-5..." />*/}
+                    {/*</svg>*/}
+                    <FaLinkedin className="w-5 h-5" />
                   </a>
                 </div>
               </div>
