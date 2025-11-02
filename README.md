@@ -66,6 +66,13 @@ Simply open [Lovable](https://lovable.dev/projects/87d4b1f0-d30d-43e6-a5bc-63c0f
 
 ## Can I connect a custom domain to my Lovable project?
 
+if u are making changes to the code locally 
+commit and push the code 
+then npm run build
+then num run deploy
+
+this will we deployed using the gh-pages branch in github pages 
+
 Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
